@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#edfaff" />
-    <meta name="description" content="Play the free Idle Tides demo from PuYu Games, a cozy fishing incremental game about catching, upgrading and automating." />
-    <title>PuYu Games | Play the Idle Tides demo</title>
+    <meta name="theme-color" content="#071f2c" />
+    <meta name="description" content="PuYu Games is an independent Québec studio and the creator of Idle Tides, a cozy fishing incremental game with a free Steam demo." />
+    <title>PuYu Games | Idle Tides</title>
     <link rel="icon" type="image/png" href="assets/puyu-brand.png" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
@@ -15,119 +15,170 @@
 
     <header class="site-header">
       <a class="brand" href="#top" aria-label="PuYu Games, home">
-        <img src="assets/puyu-wordmark.png" alt="PuYu Games" width="270" height="128" />
+        <img src="assets/puyu-games-logo.png" alt="PuYu Games" width="312" height="341" />
       </a>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="sr-only">Open menu</span>
         <span></span><span></span><span></span>
       </button>
       <nav id="site-nav" aria-label="Main navigation">
-        <a href="#game">The game</a>
-        <a href="#studio">The studio</a>
-        <a class="nav-cta" href="https://store.steampowered.com/app/4908420/Idle_Tides_Demo/" target="_blank" rel="noreferrer">Play free</a>
+        <a href="#my-games">Games</a>
+        <a href="#studio">About</a>
+        <a class="nav-cta" href="https://store.steampowered.com/app/4908420/Idle_Tides_Demo/" target="_blank" rel="noreferrer">Steam demo</a>
       </nav>
     </header>
 
     <main id="main">
       <section class="hero" id="top">
-        <div class="hero-copy">
-          <p class="overline">PuYu Games presents</p>
-          <h1>Fish.<br />Grow.<br />Repeat.</h1>
-          <p class="hero-lede">Turn one fishing line into a wonderfully overpowered fleet in Idle Tides, our cozy incremental game.</p>
+        <img class="hero-background" src="assets/idle-tides-library-hero.jpg" alt="" aria-hidden="true" width="3840" height="1240" />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="overline">Independent games from Québec</p>
+          <h1>Small team.<br />Big tides.</h1>
+          <p>We make approachable games with satisfying progression, bold characters and a little controlled chaos.</p>
           <div class="hero-actions">
-            <a class="button button-coral" href="https://store.steampowered.com/app/4908420/Idle_Tides_Demo/" target="_blank" rel="noreferrer">Play the free demo <span aria-hidden="true">↗</span></a>
-            <a class="plain-link" href="#game">See how it plays <span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="#game">Meet Idle Tides</a>
+            <a class="button button-quiet" href="https://store.steampowered.com/app/4908420/Idle_Tides_Demo/" target="_blank" rel="noreferrer">Play free</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="spotlight section-shell" id="game">
+        <div class="section-title-row">
+          <div>
+            <p class="overline">Our debut game</p>
+            <h2>In the spotlight</h2>
+          </div>
+          <p class="section-count">01 / 01</p>
+        </div>
+
+        <div class="spotlight-grid">
+          <a class="spotlight-media" href="https://store.steampowered.com/app/4908420/Idle_Tides_Demo/" target="_blank" rel="noreferrer" aria-label="Watch the Idle Tides trailer on Steam">
+            <img id="spotlight-image" src="assets/idle-tides-store-capsule.jpg" alt="Idle Tides gameplay artwork" width="1438" height="810" />
+            <span class="media-label">Watch trailer on Steam</span>
+          </a>
+
+          <article class="spotlight-copy">
+            <p class="release-line">Demo released Oct 8, 2026 <span>Free to play</span></p>
+            <h3>Idle Tides</h3>
+            <p class="byline">by PuYu Games</p>
+            <p>Engage in a cozy fishing adventure. Start by casting manually, then recruit friends, pets, robots and more as your business grows.</p>
+            <ul class="tags" aria-label="Game tags">
+              <li>Idle</li>
+              <li>Incremental</li>
+              <li>Fishing</li>
+            </ul>
+            <div class="spotlight-actions">
+              <a class="button button-primary" href="https://store.steampowered.com/app/4908420/Idle_Tides_Demo/" target="_blank" rel="noreferrer">Play on Steam</a>
+              <a class="button button-quiet" href="#my-games">See the game</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="thumbnail-rail" aria-label="Idle Tides gallery">
+          <button class="thumbnail is-active" type="button" data-image="assets/idle-tides-scene-1.jpg" aria-pressed="true">
+            <img src="assets/idle-tides-debut-solo.png" alt="" width="1438" height="810" />
+            <span>Start Cozy</span>
+          </button>
+          <button class="thumbnail" type="button" data-image="assets/idle-tides-scene-2.jpg" aria-pressed="false">
+            <img src="assets/idle-tides-debut-calm.png" alt="" width="1438" height="810" />
+            <span>Recruit Friends!</span>
+          </button>
+          <button class="thumbnail" type="button" data-image="assets/idle-tides-scene-3.jpg" aria-pressed="false">
+            <img src="assets/idle-tides-prestige-tree.png" alt="" width="1438" height="810" />
+            <span>Earn Prestige Points!</span>
+          </button>
+          <button class="thumbnail" type="button" data-image="assets/idle-tides-scene-4.jpg" aria-pressed="false">
+            <img src="assets/idle-tides-endgame-crazy.png" alt="" width="1438" height="810" />
+            <span>Go Crazy!</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="games-section section-shell" id="my-games">
+        <div class="section-title-row compact">
+          <div>
+            <p class="overline">Made by PuYu Games</p>
+            <h2>My Games</h2>
+            <p>Playful systems, surprising crews and worlds built to keep unfolding.</p>
           </div>
         </div>
 
-        <div class="hero-art">
-          <img src="assets/idle-tides-main-art.jpg" alt="A fishing boat and a huge school of colorful fish in Idle Tides" width="3000" height="2200" />
-          <p class="hero-note"><span>Demo out now</span> on Steam</p>
-        </div>
+        <article class="game-entry">
+          <div class="game-entry-intro">
+            <div>
+              <p class="game-number">Game 01</p>
+              <h3>Idle Tides</h3>
+            </div>
+            <div class="game-entry-copy">
+              <p>Begin with a single fishing line, then build a busy fleet of friends, pets, robots and increasingly unexpected helpers.</p>
+              <div class="steam-embed game-steam-widget">
+                <iframe src="https://store.steampowered.com/widget/4908420/" title="Idle Tides Demo on Steam" width="646" height="190" loading="lazy"></iframe>
+                <a href="https://store.steampowered.com/app/4908420/Idle_Tides_Demo/" target="_blank" rel="noreferrer">Open the demo page on Steam</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-gallery" aria-label="Idle Tides screenshots">
+            <figure class="gallery-featured">
+              <img src="assets/idle-tides-debut-calm.png" alt="Idle Tides at the beginning of a fishing run" width="1920" height="1080" loading="lazy" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/idle-tides-debut-solo.png" alt="An early Idle Tides run before recruiting a team" width="1920" height="1080" loading="lazy" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/idle-tides-midgame-team.png" alt="A growing Idle Tides fishing team surrounded by fish" width="1920" height="1080" loading="lazy" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/idle-tides-nutella.png" alt="Nutella helping during an Idle Tides fishing run" width="1920" height="1080" loading="lazy" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/idle-tides-prestige-boosts.png" alt="Prestige boosts in Idle Tides" width="1920" height="1080" loading="lazy" />
+              <figcaption>Stack lasting boosts</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/idle-tides-prestige-tree.png" alt="The Idle Tides prestige upgrade tree" width="1920" height="1080" loading="lazy" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/idle-tides-endgame.png" alt="A busy late-game fishing fleet in Idle Tides" width="1920" height="1080" loading="lazy" />
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/idle-tides-endgame-crazy.png" alt="A chaotic end-game Idle Tides scene filled with boats, fish and helpers" width="1920" height="1080" loading="lazy" />
+              <figcaption></figcaption>
+            </figure>
+          </div>
+        </article>
       </section>
 
-      <div class="marquee" aria-hidden="true">
-        <div>CAST YOUR LINE / UPGRADE YOUR BOATS / AUTOMATE THE FLEET / HELP THE ISLAND /&nbsp;</div>
-      </div>
-
-      <section class="game-section" id="game">
-        <div class="game-intro">
-          <p class="section-index">01 / Idle Tides</p>
-          <h2>A calm start.<br />A ridiculous fleet.</h2>
-          <p>Start by fishing by hand. Recruit friends, pets, robots and more as your cozy business grows beyond anything the island expected.</p>
+      <section class="studio section-shell" id="studio">
+        <div class="studio-heading">
+          <p class="overline">The people behind the studio</p>
+          <h2>Built by<br />PuYu Games</h2>
+          <p>Every part of Idle Tides comes from an independent studio focused on cheerful worlds and systems that feel good to master.</p>
         </div>
 
-        <div class="game-visual">
-          <img src="assets/idle-tides-library-hero.jpg" alt="The Idle Tides cast surrounded by a school of fish" width="3840" height="1240" loading="lazy" />
-        </div>
-
-        <div class="game-loop" aria-label="The Idle Tides game loop">
-          <article>
-            <span>01</span>
-            <h3>Catch</h3>
-            <p>Fish manually and fill the boat.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Upgrade</h3>
-            <p>Spend your haul on a stronger fleet.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Automate</h3>
-            <p>Build a fishing operation that keeps moving.</p>
-          </article>
-        </div>
+        <dl class="studio-facts">
+          <div><dt>Based in</dt><dd>Québec, Canada</dd></div>
+          <div><dt>Studio</dt><dd>Independent</dd></div>
+          <div><dt>First game</dt><dd>Idle Tides</dd></div>
+          <div><dt>Focus</dt><dd>Approachable progression</dd></div>
+          <div><dt>Demo</dt><dd>Available now</dd></div>
+          <div><dt>Platform</dt><dd>Steam</dd></div>
+        </dl>
       </section>
 
-      <section class="demo-section" id="demo">
-        <div class="demo-copy">
-          <p class="section-index">02 / Free demo</p>
-          <h2>Ready when you are.</h2>
-          <p>The Idle Tides demo is available now on Steam. It is free to play and includes Steam achievements and Steam Cloud.</p>
-          <dl>
-            <div><dt>Release</dt><dd>October 8, 2026</dd></div>
-            <div><dt>Genre</dt><dd>Idle incremental fishing</dd></div>
-            <div><dt>Players</dt><dd>Single-player</dd></div>
-          </dl>
-        </div>
-
-        <div class="steam-widget-wrap">
-          <iframe
-            src="https://store.steampowered.com/widget/4908420/"
-            title="Idle Tides Demo on Steam"
-            width="646"
-            height="190"
-            loading="lazy"
-          ></iframe>
-          <a class="steam-fallback" href="https://store.steampowered.com/app/4908420/Idle_Tides_Demo/" target="_blank" rel="noreferrer">Open the demo page on Steam <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-
-      <section class="studio-section" id="studio">
-        <div class="studio-mark" aria-hidden="true">PY</div>
-        <div class="studio-copy">
-          <p class="section-index">03 / The studio</p>
-          <h2>Small team.<br />Playful systems.</h2>
-          <p>PuYu Games is an independent studio from Québec. We make approachable games with bold characters, satisfying progression and a little controlled chaos.</p>
-        </div>
-        <p class="studio-statement">Easy to enter.<br />Hard to put down.</p>
-      </section>
-
-      <section class="final-section">
-        <img src="assets/idle-tides-store-capsule.jpg" alt="Idle Tides key art" width="1232" height="706" loading="lazy" />
-        <div>
-          <p class="section-index">The fish are waiting</p>
-          <h2>Start with one cast.</h2>
-          <a class="button button-navy" href="https://store.steampowered.com/app/4908420/Idle_Tides_Demo/" target="_blank" rel="noreferrer">Play the free demo <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
     </main>
 
-    <footer>
-      <a class="brand footer-brand" href="#top"><img src="assets/puyu-wordmark.png" alt="PuYu Games" width="270" height="128" /></a>
-      <p>© <span id="year">2026</span> PuYu Games. Made in Québec.</p>
-      <a href="#top">Back to top ↑</a>
+    <footer class="section-shell">
+      <a class="brand footer-brand" href="#top" aria-label="PuYu Games, home"><img src="assets/puyu-games-logo.png" alt="PuYu Games" width="312" height="341" /></a>
+      <p><a href="https://store.steampowered.com/app/4908420/Idle_Tides_Demo/" target="_blank" rel="noreferrer">Follow Idle Tides on Steam</a></p>
+      <p>© <span id="year">2026</span> PuYu Games</p>
     </footer>
   </body>
 </html>
